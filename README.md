@@ -18,3 +18,13 @@ In your cli.php:
 ```php
 \Lkt\Commander\Commander::run();
 ```
+
+Alternatively, if not all console commands uses LKT Commander, you can get the Symfony application this way:
+
+```php
+$application = \Lkt\Commander\Commander::getApplication();
+
+// Your stuff...
+
+$application->run();
+```

@@ -2,7 +2,7 @@
   "name": "lekrat/lkt-commander",
   "description": "LKT Commander",
   "type": "library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "require": {
     "php": ">=7.2.0",
     "ext-json": "*",

@@ -24,7 +24,7 @@ final class Commander
      */
     public static function run(): void
     {
-        $application = Commander::getApp();
+        $application = Commander::getApplication();
         $application->run();
     }
 
@@ -32,7 +32,7 @@ final class Commander
      * @return Application
      * @throws \Exception
      */
-    private static function getApp(): Application
+    public static function getApplication(): Application
     {
         $application = new Application();
 
