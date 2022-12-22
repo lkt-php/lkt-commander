@@ -7,19 +7,14 @@ use Symfony\Component\Console\Command\Command;
 
 final class Commander
 {
-    private static $consoleCommands = [];
+    private static array $consoleCommands = [];
 
-    /**
-     * @param Command $command
-     * @return void
-     */
-    public static function register(Command $command)
+    public static function register(Command $command): void
     {
         Commander::$consoleCommands[] = $command;
     }
 
     /**
-     * @return void
      * @throws \Exception
      */
     public static function run(): void
@@ -28,10 +23,6 @@ final class Commander
         $application->run();
     }
 
-    /**
-     * @return Application
-     * @throws \Exception
-     */
     public static function getApplication(): Application
     {
         $application = new Application();
