@@ -44,3 +44,6 @@ Thumbs.db
 .sass-cache/*
 vendor/
 composer.lock
+
+
+cron.jobs
